@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/renderer-order",
+    "description": "Package renderer-order for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\RendererOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/dbal": "^4.0",
+        "symfony/console": "^7.0",
+        "guzzlehttp/psr7": "^2.0",
+        "webmozart/assert": "^1.0",
+        "symfony/cache": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "rector/rector": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
